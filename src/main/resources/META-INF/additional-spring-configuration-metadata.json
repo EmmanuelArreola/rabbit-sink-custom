@@ -1,0 +1,48 @@
+{ "properties": [
+    {
+      "name": "rabbit.exchange",
+      "type": "java.lang.String",
+      "description": "Exchange name - overridden by exchangeNameExpression, if supplied."
+    },
+     {
+      "name": "rabbit.exchangeExpression",
+      "type": "org.springframework.expression.Expression",
+      "description": "A SpEL expression that evaluates to an exchange name."
+    },
+     {
+      "name": "rabbit.routingKey",
+      "type": "java.lang.String",
+      "description": "Routing key - overridden by routingKeyExpression, if supplied."
+    },
+     {
+      "name": "rabbit.routingKeyExpression",
+      "type": "org.springframework.expression.Expression",
+      "description": "A SpEL expression that evaluates to a routing key."
+    },
+     {
+      "name": "rabbit.persistentDeliveryMode",
+      "type": "java.lang.Boolean",
+      "description": "Default delivery mode when 'amqp_deliveryMode' header is not present, true for PERSISTENT."
+    },
+     {
+      "name": "rabbit.mappedRequestHeaders",
+      "type": "java.lang.String[]",
+      "description": "Headers that will be mapped."
+    },
+     {
+      "name": "rabbit.converterBeanName",
+      "type": "java.lang.String",
+      "description": "The bean name for a custom message converter; if omitted, a SimpleMessageConverter is used. If 'jsonConverter', a Jackson2JsonMessageConverter bean will be created for you."
+    },
+    {
+      "name": "rabbit.ownConnection",
+      "type": "java.lang.Boolean",
+      "description": "When true, use a separate connection based on the boot properties."
+    },
+    {
+      "name": "rabbit.headersMappedLast",
+      "type": "java.lang.Boolean",
+      "description": "When mapping headers for the outbound message, determine whether the headers are mapped before the message is converted, or afterwards."
+    }
+  ]
+}
