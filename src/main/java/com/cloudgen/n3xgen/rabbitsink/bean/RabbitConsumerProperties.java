@@ -91,6 +91,8 @@ public class RabbitConsumerProperties {
 		this.routingKey = routingKey;
 	}
 
+
+
 	public boolean getPersistentDeliveryMode() {
 		return this.persistentDeliveryMode;
 	}
